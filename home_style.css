@@ -5,7 +5,7 @@ body {
 }
 
 header {
-    background-color: #ffffff;
+    background-color: #45aaa5;
     margin: 0 auto;
     border-bottom: 2px solid #ccc;
     margin-bottom: 40px;
@@ -38,7 +38,7 @@ ul {
     padding: 0;
     height: 57px;
     overflow: hidden;
-    background-color: #333;
+    background-color: #45aaaa45;
   }
   
   li {
@@ -61,6 +61,7 @@ ul {
   
   li a:hover {
     background-color: #111;
+    height: 57px;
   }
 
 .container {
@@ -70,6 +71,7 @@ ul {
     background-color: #fff;
     padding: 10px;
     margin-bottom: 60px;
+    text-align: center;
 }
 
 #bioImage {
