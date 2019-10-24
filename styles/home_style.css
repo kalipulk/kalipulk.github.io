@@ -10,6 +10,7 @@ header {
     border-bottom: 2px solid #ccc;
     margin-bottom: 40px;
 }
+
 h1 {
     font-size: 35px;
     color: #fff;
@@ -39,30 +40,30 @@ ul {
     height: 57px;
     overflow: hidden;
     background-color: #45aaaa45;
-  }
-  
-  li {
+}
+
+li {
     float: left;
     border-right: 1px solid #bbb;
     height: 57px;
-  }
+}
 
-  li:last-child {
-      border-right: none;
-  }
-  
-  li a {
+li:last-child {
+    border-right: none;
+}
+
+li a {
     display: block;
     color: white;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-  }
-  
-  li a:hover {
+}
+
+li a:hover {
     background-color: #111;
     height: 57px;
-  }
+}
 
 .container {
     margin: auto;
@@ -78,7 +79,7 @@ ul {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    border-radius: 50%; 
+    border-radius: 50%;
 }
 
 .wrapper {
@@ -130,7 +131,8 @@ textarea {
     resize: none;
 }
 
-input[type=button], input[type=submit] {
+input[type=button],
+input[type=submit] {
     background-color: #4aaaa5;
     color: #fff;
     width: 28%;
@@ -152,4 +154,81 @@ footer {
     background-color: #666;
     color: #fff;
     border-top: 8px solid #4aaaa5;
+}
+
+@media screen and (min-width: 980px) {}
+
+@media screen and (max-width: 979px) {
+    body {
+        width: 100%;
+    }
+    h2 {
+        text-align: center;
+    }
+    .container {
+        width: 700px;
+        height: auto;
+    }
+    #bioImage {
+        width: 90%;
+        height: auto;
+    }
+    .wrapper {
+        width: 700px;
+        height: auto;
+    }
+    .flexContainer {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-flow: row wrap
+    }
+    .contact {
+        width: 700px;
+        height: auto;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    body {
+        width: 100%;
+        text-align: center;
+    }
+    header {
+        width: 100%;
+        text-align: center;
+    }
+    nav {
+        width: 100%;
+        float: none;
+    }
+
+    ul {
+        text-align: center;
+        display: inline-block;
+    }
+
+    li a {
+        text-align: center;
+    }
+    .container {
+        width: 85%;
+        height: auto;
+    }
+    #bioImage {
+        width: 90%;
+        height: auto;
+    }
+    .wrapper {
+        width: 80%;
+    }
+    .column {
+        width: 85%;
+        height: auto;
+    }
+    .contact {
+        width: 85%;
+        height: auto;
+    }
 }
