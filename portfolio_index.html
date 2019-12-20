@@ -1,46 +1,128 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Kali Pulkkinen | Full-Stack Web Developer</title>
-    <link rel="stylesheet" type="text/css" href="styles/portfolio_reset.css">
-    <link rel="stylesheet" type="text/css" href="styles/home_style.css">
-    <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
-</head>
-<body>
-    <header>
-        <h1>Kali Pulkkinen</h1>
-        <nav>
-            <ul>
-                <li><a href="portfolio_index.html">About</a></li>
-                <li><a href="portfolio_work.html">Portfolio</a></li>
-                <li><a href="portfolio_contact.html">Contact</a></li>
-            </ul> 
-        </nav>
-    </header>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
-    <div class="container">
-        <h2>About Me</h2>
-        <img src="styles/images/kali.png" alt="photo of kali" id="bioImage" width="600" height="450" />
-        <br>
-        <section id="mainBio">
-            <p><strong>Origin:</strong> Portland, Maine</p>
-            <p><strong>Currently:</strong> Redding, Connecticut</p>
-            <br>
-            <p>Bartender turned Web Development student. Just taking it one day, and one cup of coffee at a time. Interests include sleeping, Scrabble & stand-up comedy.</p>
-            <br>
-        </section>
-    
-        <section>
-            <p>
-            More to come soon!
-            </p>
-        </section> 
-    </div> 
-    <footer>
-        <p>Kali Pulkkinen 2019 &copy;</p>
-    </footer>  
-</body>
+    <title>Kali Pulkkinen | Full-Stack Web Development</title>
+    <link rel="icon" type="image/png" href="http://simpleicon.com/wp-content/uploads/Code-Optimization-3.png">    
+    <link rel="stylesheet" type="text/css" href="styles/home_style.css" />
+    <link href="https://fonts.googleapis.com/css?family=Rubik|Rubik+Mono+One|Syncopate&display=swap" rel="stylesheet">
+    <script
+      src="https://kit.fontawesome.com/fdea03d6f7.js"
+      crossorigin="anonymous"
+></script>
+  </head>
+  <body>
+
+<div class="title-container">  
+    <div class="title"> Kali Pulkkinen</div> 
+    <div class="role">Full-Stack Web Developement</div>
+
+    <!--nav bar-->
+    <div>
+    <!-- hamburgler use to scroll page to desired content-->
+        <div>
+            <div id="open-menu"><i class="far fa-folder fa-2x rotate"></i></div>
+            <div id="close-menu" style="display:none;">X</div>
+        </div>
+        
+         <!--dropdown-->
+
+        <div id="more-content" class="content-more-box">
+            <div class="content-menu">
+                <div>
+                    <div class="site-sections">
+                        <div>
+                            <a href="#">About</a>
+                            <a href="#">Projects</a>
+                            <a href="#">Tech Stack</a>
+                            <a href="#">Resume</a>
+                            <a href="#">Contact</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--bio and about section-->
+<div class="bio-container">
+    <div class="bio">
+        <div>Origin: Portland, Maine. Currently: Redding, Connecticut. Bartender turned Web Development student. Just taking it one day, and
+          one cup of coffee at a time. Interests include sleeping, Scrabble & stand-up comedy.
+        </div>
+    </div>
+</div>    
+
+
+<!--bio and about section-->
+      <!-- <img
+        src="styles/images/kali.png"
+        alt="photo of kali"
+        id="bioImage"
+        width="600"
+        height="450"
+      /> -->
+     
+<!--projects-->
+
+    <div class="project-container">
+        <div class="portfolio">Portfolio</div>
+            <div class="row" class="flexContainer">
+                <div class="column">
+                    <a href="https://kalipulk.github.io/word_game/hangman_index.html">hang man</a>
+               </div>
+
+               <div class="column">
+                    <a href="https://kalipulk.github.io/crystal_challenge/index_crystal.html">crystals</a>
+                </div>
+
+                <div class="column">
+                    <a href="https://kalipulk.github.io/trivia/index_trivia.html">trivia</a>
+                </div>
+
+           </div>
+           <div class="row" class="flexContainer">
+                <div class="column">
+                    <a href="https://kalipulk.github.io/giphy/index_giphy.html">gifs</a>
+                </div>   
+                <div class="column">
+                    <a href="https://kalipulk.github.io/train_time/index.html">trains</a>
+                </div>
+                <div class="column">
+                    <a href="https://kalipulk.github.io/project_one/index.html">collaborative project</a>
+                </div>
+        </div>     
+    </div>    
+
+
+<!--contact-->
+
+        <div class="contact-container">
+            <div class="connect">drop me a line</div>
+
+            <div>
+                <div class="contact-flex">
+                    <div class="icons">
+                        <i class="far fa-paper-plane fa-2x"><a href="mailto:kapulkkinen@gmail.com"></a></i>
+                    
+                        <i class="fab fa-github fa-2x"><a href="https://github.com/kalipulk"></a></i>
+                    
+                        <i class="fab fa-linkedin fa-2x"><a href="https://www.linkedin.com/in/kalipulkkinen/"></a></i> 
+                    
+                        <i class="fab fa-instagram fa-2x"><a href="https://www.instagram.com/kalipulk/"></a></i>
+                    </div>
+                </div>
+            </div>
+        </div>    
+
+
+    <div class="copyright">
+        Kali Pulkkinen 2019 &copy;
+    </div>
+
+  </body>
 </html>

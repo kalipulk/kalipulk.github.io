@@ -1,39 +1,123 @@
 body {
-    font-family: 'Poppins', sans-serif;
-    color: #777;
-    background-image: url("memphis-mini/memphis-mini.png");
+    font-family: 'Rubik', sans-serif;
+    text-align: center;
 }
 
-header {
-    background-color: #45aaa5;
-    margin: 0 auto;
-    border-bottom: 2px solid #ccc;
-    margin-bottom: 40px;
-}
-
-h1 {
-    font-size: 35px;
+a {
+    text-decoration: none;
+    margin: auto;
+    padding: 10px;
     color: #fff;
-    background: #4aaaa5;
-    padding: 10px;
-    margin: 0;
-    display: inline-block;
 }
 
-h2 {
-    font-size: 30px;
-    color: #4aaaa5;
-    margin: 10px;
-    padding: 10px;
-    border-bottom-color: #333;
+.title-container {
+    background-image: url("https://images.unsplash.com/photo-1532787799187-93655e51d472?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1334&q=80");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 300px;
+    opacity: .85;
+    width: 100%;
+}
+.title {
+    font-family: 'Syncopate', sans-serif;
+    font-size: 48px;
+    font-weight: 700;
+    text-align: center;
+    width: 100%;
+    margin: auto;
+    padding-top: 60px;
 }
 
+.role {
+    padding-bottom: 30px;
+}
+
+.site-selections {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    margin: auto;
+    padding: 10px;
+    color: #fff;
+}
+
+.bio-container {
+    font-size: 12px;
+    margin: auto;
+    background-color: #808080;
+    padding: 10px;
+    text-align: center;
+}
+
+.project-container {    
+    width: 70%;
+    margin: auto;
+    padding: 40px;
+}
+.project-container a {
+    color: #000;
+}
+
+.project-container a:hover {
+    background-color: #286F82;
+    border-radius: 10px;
+    color: #fff;
+    box-shadow: 15px 15px 30px grey;  
+}
+
+.portfolio {
+    font-size: 28px;
+    font-family: 'Syncopate', sans-serif;
+}
+
+.column {
+    float: left;
+    width: 25%;
+    margin: 20px;
+    padding: 10px;
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.contact-container {
+    color: #000;
+    margin: auto;
+    padding: 40px;
+}
+
+.connect {
+    font-size: 28px;
+    font-family: 'Syncopate', sans-serif;
+    padding: 15px;
+}
+
+.contact-items-flex {
+    margin: auto;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.copyright {
+    font-family: 'Syncopate', sans-serif;
+    font-size: 12px;
+    padding: 20px;
+    margin: auto;
+    color: #000;
+}
+
+
+/* 
 nav {
     float: right;
     height: 57px;
-}
+} */
 
-ul {
+/* ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -63,98 +147,17 @@ li a {
 li a:hover {
     background-color: #111;
     height: 57px;
-}
+} */
 
-.container {
-    margin: auto;
-    width: 960px;
-    border: 3px solid #ccc;
-    background-color: #fff;
-    padding: 10px;
-    margin-bottom: 60px;
-    text-align: center;
-}
 
-#bioImage {
+/* #bioImage {
     display: block;
     margin-left: auto;
     margin-right: auto;
     border-radius: 50%;
-}
+} */
 
-.wrapper {
-    margin: auto;
-    width: 960px;
-    border: 3px solid #ccc;
-    background-color: #fff;
-    padding: 10px;
-}
 
-.column {
-    float: left;
-    width: 25%;
-    margin: 20px;
-    padding: 10px;
-}
-
-.row::after {
-    content: "";
-    clear: both;
-    display: table;
-}
-
-.contact {
-    margin: auto;
-    width: 960px;
-    border: 3px solid #ccc;
-    background-color: #fff;
-    padding: 10px;
-}
-
-form {
-    padding: 20px;
-}
-
-input[type=text] {
-    width: 100%;
-    line-height: 2;
-    margin: 5px;
-}
-
-textarea {
-    margin: 5px;
-    width: 100%;
-    height: 200px;
-    padding: 10px;
-    box-sizing: border-box;
-    border: 1px solid #ccc;
-    resize: none;
-}
-
-input[type=button],
-input[type=submit] {
-    background-color: #4aaaa5;
-    color: #fff;
-    width: 28%;
-    text-decoration: none;
-    padding: 10px;
-    margin: 4px;
-    border: 1px solid #ccc;
-}
-
-footer {
-    display: block;
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    padding: 10px;
-    font-size: 10px;
-    text-align: center;
-    background-color: #666;
-    color: #fff;
-    border-top: 8px solid #4aaaa5;
-}
 
 @media screen and (min-width: 980px) {}
 
@@ -227,8 +230,18 @@ footer {
         width: 85%;
         height: auto;
     }
-    .contact {
-        width: 85%;
-        height: auto;
+
+
+    .contact-wrapper {
+        width: 90&;
+        margin: auto;
+        padding: 20px;
+        display: flex;
+    }
+
+    .contact-icons-flex {
+        display: flex;
+        align-content: center;
+        justify-content: center;
     }
 }
