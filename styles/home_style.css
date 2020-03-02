@@ -84,6 +84,26 @@ a {
     display: table;
 }
 
+/* TECH STACK */
+.tech-container {
+    padding: 80px;
+}
+.row2::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.col{
+    float: left;
+    width: 20%;
+    margin: 20px;
+    padding: 10px;
+}
+
+
+/* CONTACT  */
+
 .contact-container {
     color: #000;
     margin: auto;
@@ -101,6 +121,7 @@ a {
     padding: 10px;
     display: flex;
     align-items: center;
+    color: #000;
 }
 
 .copyright {
@@ -233,7 +254,7 @@ li a:hover {
     }
 
     .contact-wrapper {
-        width: 90&;
+        width: 90%;
         margin: auto;
         padding: 20px;
         display: flex;
@@ -244,4 +265,3 @@ li a:hover {
         align-content: center;
         justify-content: center;
     }
-}
